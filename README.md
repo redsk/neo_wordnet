@@ -29,11 +29,9 @@ How-To
 
     # Usage:
     # python convertwn.py <input file>
-    # If the flag ALL_LANGUAGES is not set, only English concepts will be converted
-    # this will take a while
     python neo_wordnet/convertwn.py wordnet/nt31.nt
 
-    # I've filtered and replacements to WordNet namespace (to shorten the names)
+    # I've filtered some relations and made some replacements to WordNet namespace (to shorten names)
     # Have a look at the log file
     less wordnet/WNimporter.log
 
@@ -48,7 +46,7 @@ How-To
     neo4j-community-2.2.2/bin/neo4j start
 
 
-Goto localhost:7474 to see the graph. Create and index on labels for performance reasons:
+Go to localhost:7474 to see the graph. Create indexes on labels for performance reasons:
 
     CREATE INDEX ON :`lemon#LexicalEntry`(id)
     CREATE INDEX ON :`lemon#LexicalSense`(id)

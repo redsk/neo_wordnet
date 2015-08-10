@@ -13,11 +13,13 @@ Pre-Requisites
 
 Tested with neo4j-community-2.2.2.
 
+- NEW!: Check out [Neo_Merger](https://github.com/redsk/neo_merger) to import Conceptnet and Wordnet into the same neo4j graph!
+
 How-To 
 -------------------
 
-    mkdir neo-kbs
-    cd neo-kbs
+    mkdir neo4j-kbs
+    cd neo4j-kbs
     git clone https://github.com/redsk/neo_wordnet.git
 
     # get latest wordnet rdf from http://wordnet-rdf.princeton.edu/wn31.nt.gz

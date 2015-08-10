@@ -1,8 +1,6 @@
 #!python
 
 import os
-import glob
-import re
 import operator
 import sys
 import cPickle as pickle
